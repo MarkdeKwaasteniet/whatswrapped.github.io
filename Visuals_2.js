@@ -5,13 +5,12 @@ let categoryLegend, salaryLegend
 let currentColor
 let interval, trans_timeout
 
-const margin = {top: 20, right: 20, bottom: 30, left: 70};
+const margin = {top: 20, right: 20, bottom: 30, left: 100};
 const width = 800 - margin.left - margin.right
 const height = 600 - margin.bottom - margin.top
 
 //Read Data, convert numerical categories into floats
 //Create the initial visualisation
-
 
 d3.csv("https://raw.githubusercontent.com/MarkdeKwaasteniet/test_D3/main/tekst_data_test.csv"
 , function(d){
@@ -80,7 +79,7 @@ function draw_img(){
     draw_init();
     // Select the svg element and append an image element
     const image = svg.append("image")
-    .attr("xlink:href", "thundermuffin.jpg")
+    .attr("xlink:href", "logo_tm2023_white.png")
     .attr("x", 0)
     .attr("y", 0);
 
@@ -138,6 +137,15 @@ function draw_init(){
         .call(d3.axisLeft(y));
 
 }
+function styleAxisLabels(){
+    svg.selectAll(".x.axis")
+      .style("font-family", "Spectral")
+      .style("font-size", "20px");
+  
+    svg.selectAll(".y.axis")
+      .style("font-family", "Spectral")
+      .style("font-size", "20px");
+  }
 
 function draw0(){ 
     // Set a timeout to stop the loop after 50 iterations
@@ -178,6 +186,8 @@ function draw0(){
         .duration(1000)
         .ease(d3.easeLinear)
         .call(d3.axisLeft(y));
+
+    styleAxisLabels();
 
     function mouseOver(d, i){
             d3.select(this)
