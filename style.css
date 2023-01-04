@@ -52,8 +52,7 @@ strong {
 
 #graphic {
     margin: auto;
-    margin-left: 50;
-    width: 1500px;
+    width: 1700px;
     flex-direction: row;
     align-items: top;
     justify-content: space-around;
@@ -89,7 +88,7 @@ strong {
     padding: 6px;
     font-family: "Spectral";
     font-size: 2em;
-    max-width: 400px;
+    max-width: 800px;
     z-index: 100;
 }
 

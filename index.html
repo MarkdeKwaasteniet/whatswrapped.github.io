@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src = 'd3.js'></script>
     <script src = 'https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js'></script>
-
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <meta property='og:title' content='ThunderMuffin WhatsWrapped'/>
     <meta property='og:image' content='https://github.com/cuthchow/college-majors-visualisation/blob/master/preview.png'/>
     <meta property='og:description' content='This interactive, scrollable data visualisation will take you on a journey through your Whatsapp Wrapped of 2022'/>
@@ -17,9 +18,7 @@
 
 
 <body>
-    <!-- <div id="info">
-        a
-    </div> -->
+
     <img src="https://github.com/cuthchow/college-majors-visualisation/blob/master/preview.png" alt="">
     <div id="tooltip"></div>
     <div id="graphic">
@@ -52,13 +51,15 @@
                 <div class="vraag">
                 <p>
                     <h2>Wie heeft het meeste gespammed in 2022?</h2>
+
                 </p>
             </div>
             </section>
             <section class="step">
                 <div class="vraag">
                 <p>
-                Steven heeft thuis met Luana niet zo veel te zeggen. <br>
+                    <h2>Peer</h2>
+                Peer heeft thuis met Laurens niet zo veel te zeggen. <br>
                 Daarom moet hij al zijn onzin in de Thunder Muffin chat leggen. <br>
                 </p>
             </div>
@@ -66,37 +67,258 @@
             <section class="step">
                 <div class="vraag">
                 <p>
-                    <h2>Wie overviel ons met emotie in 2022?</h2>
+                    <h2>Wie was de grootste nachtbraker in 2022?</h2>
                 </p>
             </div>
             </section>
             <section class="step">
                 <div class="vraag">
                 <p>
-                Thushara schaadt zichzelf na een avondje uit altijd oud onder deze noemer.<br>
-                Maar door met zo veel emoji's te strooien lijk je eerder op een boomer. <br>
+                    <h2>Toet</h2>
+                    Iedereen kent de nachtelijke perikelen van Thushara in de chat.<br>
+                    Het is dat we vaak niet wakker zijn op dat moment. Toet ga naar bed. <br>
                 </p>
             </div>
             </section>
             <section class="step">
                 <div class="vraag">
                 <p>
-                    <h2>Wie is de grootste nachtbraker in 2022?</h2>
+                    <h2>Wie stuurde het meeste berichten in de ochtend?</h2>
                 </p>
             </div>
             </section>
             <section class="step">
                 <div class="vraag">
                 <p>
-                Iedereen kent de nachtelijke perikelen van Thushara in de chat.<br>
-                Het is dat we vaak niet wakker zijn op dat moment. Toet ga naar bed. <br>
+                    <h2>Peer</h2>
+                rijm.<br>
+                rijm. <br>
                 </p>
             </div>
             </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie stuurde het meeste vragen in de chat?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Chris</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie stuurde gemiddeld de positiefste berichten?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Omar</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie was er in totaal het meest positief?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Bob</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie gebruikt er gemiddeld de meeste woorden in een bericht?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Pieter</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie heeft in totaal het minste woorden gebruikt?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Luuk</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie heeft gemiddeld het meeste gelachen?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Toet</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie heeft er in totaal het meeste gelachen?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Nino</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie gebruiken gemiddeld het meeste Emoji's?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Omar en Pieter</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Wie heeft er in totaal het meeste Emoji's gebruikt?</h2>
+                </p>
+            </div>
+            </section>
+            <section class="step">
+                <div class="vraag">
+                <p>
+                    <h2>Omar</h2>
+                rijm.<br>
+                rijm. <br>
+                </p>
+            </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Wie heeft het langste bericht aan elkaar gebreeën?</h2>
+            </p>
+        </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Steven</h2>
+            rijm.<br>
+            rijm. <br>
+            De zin: Even een gek vraagje, ken jij wellicht iemand die zich bezighoudt met huurrecht? 
+            We kregen gister een beetje een vreemd belletje van onze huisbaas, zij is zelf Italiaans, 
+            heeft het huis gekocht toen ze hier woonde en verhuurd het nu aan ons en woont zelf in Doha. 
+            We hebben inmiddels een contract voor onbepaalde tijd, 
+            maar ze belde gister met een verhaal dat de bank erachter is gekomen dat zij als niet-Nederlandse staatsburger 
+            zelf in het buitenland woont en een huis hier verhuurd, dus dat zij 1. het huis moet verkopen of 2. 
+            een contract met een maximale duratie van 5 jaar kan aanbieden onder een 'diplomatenclausule'. 
+            Ze wilt ons nu dus een nieuw contract laten tekenen waarmee we met terugwerkende kracht nog 4 jaar hier kunnen wonen en 
+            zij gedurende de hele duratie van dat contract kan aangeven dat ze terug wilt verhuizen naar Nederland en ons dus ff binnen 3 maanden eruit kan kicken. 
+            Voelt niet heel chill en volgens mij schieten wij onszelf in de voet als wij een nieuw contract tekenen. 
+            Wil het dus graag ff laten checken bij een jurist wat onze mogelijkheden zijn en of haar verhaal wel helemaal zuiver is.
+            </p>
+        </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Wie heeft het langste woord gemaakt?</h2>
+            </p>
+        </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Omar</h2>
+            rijm.<br>
+            rijm. <br>
+            Het woord: Hottestotterputintentoonstelling
+            </p>
+        </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Wie stuurde vaak een frustratie door?</h2>
+            </p>
+        </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Steven</h2>
+            rijm.<br>
+            rijm. <br>
+            </p>
+        </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Wie heeft het totaal het meeste frustratie gedeeld?</h2>
+            </p>
+        </div>
+        </section>
+        <section class="step">
+            <div class="vraag">
+            <p>
+                <h2>Peer</h2>
+            rijm.<br>
+            rijm. <br>
+            </p>
+        </div>
+        </section>
 
         </div>
         <div id="vis">
-
         </div>
     </div>
 
