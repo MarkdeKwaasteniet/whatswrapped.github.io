@@ -8,6 +8,9 @@ const margin = {top: 20, right: 20, bottom: 30, left: 100};
 const width = 800 - margin.left - margin.right
 const height = 600 - margin.bottom - margin.top
 
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
 //Read Data, convert numerical categories into floats
 //Create the initial visualisation
 
@@ -2721,7 +2724,7 @@ let lastIndex, activeIndex = 0
 scroll.on('active', function(index){
     d3.selectAll('.step')
         .transition().duration(500)
-        .style('opacity', function (d, i) {return i === index ? 1 : 0.1;});
+        .style('opacity', function (d, i) {return i === index ? 1 : 0;});
     
     activeIndex = index
     let sign = (activeIndex - lastIndex) < 0 ? -1 : 1; 

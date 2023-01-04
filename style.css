@@ -20,6 +20,18 @@ body {
     margin-right: 20px;
 }
 
+.fixed-text {
+    position: fixed;
+    bottom: 15;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: "Spectral";
+    font-weight: 400;
+    font-size: 25px;
+  }
 
 .step {
     color: white;
@@ -30,9 +42,6 @@ body {
     line-height: 1.4em;
     text-align: justify;
     font-size: 23px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
 }
 
 h1, h2 {
