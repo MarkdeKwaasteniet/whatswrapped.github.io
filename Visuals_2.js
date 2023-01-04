@@ -60,7 +60,7 @@ function mouseOver(d, i){
         .style('top', (d3.event.pageY - 25) + 'px')
         .style('display', 'inline-block')
         .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-            <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Berichten)}`)
+            <br> <strong>Aantal:</strong> ${d3.format(",.2f")(d.Berichten)}`)
 }
 function mouseOut(d, i){
     d3.select('#tooltip')
@@ -215,7 +215,7 @@ function draw0(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Berichten)}`);
+                    <br> <strong>Aantal:</strong> ${d3.format(".0f")(d.Berichten)}`);
         }
     // Add mouseover and mouseout events for all circles
     // Changes opacity and adds border
@@ -365,7 +365,7 @@ function draw0_trans(){
 //                 .style('top', (d3.event.pageY - 25) + 'px')
 //                 .style('display', 'inline-block')
 //                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-//                     <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Emoji)}`)
+//                     <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Emoji)}`)
 //         }
     
 //     // Add mouseover and mouseout events for all circles
@@ -514,7 +514,7 @@ function draw2(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Nacht)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Nacht)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -661,7 +661,7 @@ function draw3(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Ochtend)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Ochtend)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -808,7 +808,7 @@ function draw4(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Vragen)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.4f")(d.Vragen)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -955,7 +955,7 @@ function draw5(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Sentiment)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.4f")(d.Sentiment)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -1102,7 +1102,7 @@ function draw6(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Sentiment_Tot)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Sentiment_Tot)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -1249,7 +1249,7 @@ function draw7(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Woorden)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.1f")(d.Woorden)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -1396,7 +1396,7 @@ function draw8(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Woorden_Tot)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(".0f")(d.Woorden_Tot)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -1543,7 +1543,7 @@ function draw9(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Lachen)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.2f")(d.Lachen)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -1690,7 +1690,7 @@ function draw10(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Lachen_Tot)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Lachen_Tot)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -1837,7 +1837,7 @@ function draw11(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Emoji)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.4f")(d.Emoji)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -1984,7 +1984,7 @@ function draw12(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Emoji_Tot)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Emoji_Tot)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -2131,7 +2131,7 @@ function draw13(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Langste_Bericht)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Langste_Bericht)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -2278,7 +2278,7 @@ function draw14(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Langste_Woord)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Langste_Woord)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -2425,7 +2425,7 @@ function draw15(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Gefrustreerd)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.4f")(d.Gefrustreerd)}`)
         }
     
     // Add mouseover and mouseout events for all circles
@@ -2572,7 +2572,7 @@ function draw16(){
                 .style('top', (d3.event.pageY - 25) + 'px')
                 .style('display', 'inline-block')
                 .html(`<strong>Naam:</strong> ${d.Naam[0] + d.Naam.slice(1,).toLowerCase()} 
-                    <br> <strong>Aantal:</strong> ${d3.format(",.2r")(d.Gefrustreerd_Tot)}`)
+                    <br> <strong>Aantal:</strong> ${d3.format(",.0f")(d.Gefrustreerd_Tot)}`)
         }
     
     // Add mouseover and mouseout events for all circles
