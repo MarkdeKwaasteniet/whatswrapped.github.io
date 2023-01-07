@@ -2685,8 +2685,8 @@ let activationFunctions = [
     draw3_trans,
     draw4,
     draw4_trans,
-    draw5,
-    draw5_trans,
+    // draw5,
+    // draw5_trans,
     draw6,
     draw6_trans,
     draw7,
@@ -2697,8 +2697,8 @@ let activationFunctions = [
     // draw9_trans,
     draw10,
     draw10_trans,
-    draw11,
-    draw11_trans,
+    // draw11,
+    // draw11_trans,
     draw12,
     draw12_trans,
     draw13,
@@ -2707,8 +2707,8 @@ let activationFunctions = [
     draw14_trans,
     draw15,
     draw15_trans,
-    draw16,
-    draw16_trans,
+    // draw16,
+    // draw16_trans,
 ]
 
 //All the scrolling function
